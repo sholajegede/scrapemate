@@ -25,7 +25,23 @@ from assets import PRICING
 import os
 
 # Initialize Streamlit app
-st.set_page_config(page_title="ScrapMate | Your AI partner in web data discovery", page_icon="🤌")
+st.set_page_config(
+    page_title="ScrapMate | Your AI partner in web data discovery",
+    page_icon="🤌"
+)
+
+# Inject Open Graph metadata
+st.markdown(
+    """
+    <meta property="og:title" content="ScrapMate | Your AI partner in web data discovery">
+    <meta property="og:description" content="ScrapMate is an intelligent scraping tool that extracts data from any website effortlessly.">
+    <meta property="og:image" content="https://your-image-url.com/social-share-image.png">
+    <meta property="og:url" content="https://scrapemate.streamlit.app">
+    """,
+    unsafe_allow_html=True
+)
+
+# App content
 st.title("ScrapMate - an intelligent scraping tool that extracts data from any website effortlessly.")
 
 # Initialize session state variables
@@ -93,7 +109,7 @@ st.sidebar.markdown("---")
 
 
 # Main action button
-if st.sidebar.button("LAUNCH SCRAPER", type="primary"):
+if st.sidebar.button("LAUNCH SCRAPEMATE", type="primary"):
     if url_input.strip() == "":
         st.error("Please enter at least one URL.")
     elif show_tags and len(fields) == 0:
