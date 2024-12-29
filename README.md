@@ -92,8 +92,8 @@ pip install -r requirements.txt
 De-activate your virtual environment and then create a new file named `.env` in the root of your project and add the following:
 
 ```env
-#BRIGHTDATA
-SBR_WEBDRIVER
+# BRIGHT DATA
+SBR_WEBDRIVER=
 ```
 Re-activate your virtual environment
 
