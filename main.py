@@ -26,23 +26,23 @@ import os
 
 # Initialize Streamlit app
 st.set_page_config(
-    page_title="ScrapMate | Your AI partner in web data discovery",
+    page_title="ScrapeMate | Your AI partner in web data discovery",
     page_icon="🤌"
 )
 
 # Inject Open Graph metadata
 st.markdown(
     """
-    <meta property="og:title" content="ScrapMate | Your AI partner in web data discovery">
-    <meta property="og:description" content="ScrapMate is an intelligent scraping tool that extracts data from any website effortlessly.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/sholajegede/scrapemate/main/screenshot-scraped.png">
+    <meta property="og:title" content="ScrapeMate | Your AI partner in web data discovery">
+    <meta property="og:description" content="ScrapeMate is an intelligent scraping tool that extracts data from any website effortlessly.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sholajegede/scrapemate/main/screenshot-3.png">
     <meta property="og:url" content="https://scrapemate.streamlit.app">
     """,
     unsafe_allow_html=True
 )
 
 # App content
-st.title("ScrapMate - an intelligent scraping tool that extracts data from any website effortlessly.")
+st.title("ScrapeMate - an intelligent scraping tool that extracts data from any website effortlessly.")
 
 # Initialize session state variables
 if 'scraping_state' not in st.session_state:
