@@ -13,8 +13,6 @@ import html2text
 import tiktoken
 import streamlit as st
 
-from openai import OpenAI
-import google.generativeai as genai
 from groq import Groq
 
 from dotenv import load_dotenv
@@ -269,7 +267,7 @@ def save_formatted_data(formatted_data, output_folder: str, json_file_name: str,
         except json.JSONDecodeError:
             raise ValueError("The provided formatted data is a string but not valid JSON.")
     else:
-        # Handle data from OpenAI or other sources
+        # Handle data from Groq or other sources
         formatted_data_dict = formatted_data.dict() if hasattr(formatted_data, 'dict') else formatted_data
 
     # Save the formatted data as JSON

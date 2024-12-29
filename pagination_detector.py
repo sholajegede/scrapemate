@@ -1,5 +1,3 @@
-# pagination_detector.py
-
 import os
 import json
 from typing import List, Dict, Tuple, Union
@@ -7,13 +5,8 @@ from pydantic import BaseModel, Field, ValidationError
 
 import tiktoken
 from dotenv import load_dotenv
-
-
-from openai import OpenAI
-import google.generativeai as genai
 from groq import Groq
 
-import openai
 from api_management import get_api_key
 from assets import PROMPT_PAGINATION, PRICING, GROQ_LLAMA_MODEL_FULLNAME, GROQ_LLAMA_MODEL_FULLNAME_OTHER
 
@@ -48,7 +41,7 @@ def detect_pagination_elements(url: str, indications: str, selected_model: str, 
         Uses AI models to analyze markdown content and extract pagination elements.
 
         Args:
-            selected_model (str): The name of the OpenAI model to use.
+            selected_model (str): The name of the model to use.
             markdown_content (str): The markdown content to analyze.
 
         Returns:
