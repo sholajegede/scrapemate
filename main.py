@@ -35,7 +35,7 @@ st.markdown(
     """
     <meta property="og:title" content="ScrapMate | Your AI partner in web data discovery">
     <meta property="og:description" content="ScrapMate is an intelligent scraping tool that extracts data from any website effortlessly.">
-    <meta property="og:image" content="https://your-image-url.com/social-share-image.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sholajegede/scrapemate/main/screenshot-scraped.png">
     <meta property="og:url" content="https://scrapemate.streamlit.app">
     """,
     unsafe_allow_html=True
